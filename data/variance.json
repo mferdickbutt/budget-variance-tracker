@@ -1,0 +1,141 @@
+{
+  "schema": "budget-variance/v1",
+  "title": "FY2025 Operating Budget Variance",
+  "currency": "USD",
+  "year": 2025,
+  "polarity": "actual-minus-budget",
+  "polarityNote": "Variance $ = actual − budget. Positive means overspend; negative means underspend.",
+  "thresholds": {
+    "onTrackPercent": 2,
+    "onTrackNote": "Flag is 'on' when |variance %| ≤ 2. Zero-budget cells have undefined % (rendered —); flag then uses the sign of variance $. Budget 0 and actual 0 is 'on'."
+  },
+  "notes": [
+    "Each cell has budget and actual. Null actual means the period is not closed yet and is omitted from totals (not treated as $0).",
+    "Travel Jan/Feb have a $0 budget to exercise the zero-budget path in production data.",
+    "Professional Services Dec actual is null (books not closed)."
+  ],
+  "months": [
+    { "id": "2025-01", "label": "Jan 2025" },
+    { "id": "2025-02", "label": "Feb 2025" },
+    { "id": "2025-03", "label": "Mar 2025" },
+    { "id": "2025-04", "label": "Apr 2025" },
+    { "id": "2025-05", "label": "May 2025" },
+    { "id": "2025-06", "label": "Jun 2025" },
+    { "id": "2025-07", "label": "Jul 2025" },
+    { "id": "2025-08", "label": "Aug 2025" },
+    { "id": "2025-09", "label": "Sep 2025" },
+    { "id": "2025-10", "label": "Oct 2025" },
+    { "id": "2025-11", "label": "Nov 2025" },
+    { "id": "2025-12", "label": "Dec 2025" }
+  ],
+  "categories": [
+    {
+      "id": "payroll",
+      "name": "Payroll",
+      "cells": {
+        "2025-01": { "budget": 85000, "actual": 84820 },
+        "2025-02": { "budget": 85000, "actual": 86140 },
+        "2025-03": { "budget": 85000, "actual": 85210 },
+        "2025-04": { "budget": 85000, "actual": 87250 },
+        "2025-05": { "budget": 85000, "actual": 84980 },
+        "2025-06": { "budget": 85000, "actual": 85500 },
+        "2025-07": { "budget": 85000, "actual": 88120 },
+        "2025-08": { "budget": 85000, "actual": 84740 },
+        "2025-09": { "budget": 85000, "actual": 85110 },
+        "2025-10": { "budget": 85000, "actual": 86400 },
+        "2025-11": { "budget": 85000, "actual": 85880 },
+        "2025-12": { "budget": 85000, "actual": 84490 }
+      }
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "cells": {
+        "2025-01": { "budget": 14000, "actual": 11200 },
+        "2025-02": { "budget": 14000, "actual": 10850 },
+        "2025-03": { "budget": 14000, "actual": 12500 },
+        "2025-04": { "budget": 14000, "actual": 13900 },
+        "2025-05": { "budget": 14000, "actual": 14200 },
+        "2025-06": { "budget": 14000, "actual": 15100 },
+        "2025-07": { "budget": 14000, "actual": 16800 },
+        "2025-08": { "budget": 14000, "actual": 17250 },
+        "2025-09": { "budget": 14000, "actual": 15500 },
+        "2025-10": { "budget": 14000, "actual": 18100 },
+        "2025-11": { "budget": 14000, "actual": 19000 },
+        "2025-12": { "budget": 14000, "actual": 21000 }
+      }
+    },
+    {
+      "id": "facilities",
+      "name": "Facilities",
+      "cells": {
+        "2025-01": { "budget": 9800, "actual": 9750 },
+        "2025-02": { "budget": 9800, "actual": 9820 },
+        "2025-03": { "budget": 9800, "actual": 9900 },
+        "2025-04": { "budget": 9800, "actual": 9780 },
+        "2025-05": { "budget": 9800, "actual": 9850 },
+        "2025-06": { "budget": 9800, "actual": 10100 },
+        "2025-07": { "budget": 9800, "actual": 9790 },
+        "2025-08": { "budget": 9800, "actual": 9830 },
+        "2025-09": { "budget": 9800, "actual": 9880 },
+        "2025-10": { "budget": 9800, "actual": 10250 },
+        "2025-11": { "budget": 9800, "actual": 9910 },
+        "2025-12": { "budget": 9800, "actual": 9860 }
+      }
+    },
+    {
+      "id": "software",
+      "name": "Software Licenses",
+      "cells": {
+        "2025-01": { "budget": 6200, "actual": 6200 },
+        "2025-02": { "budget": 6200, "actual": 6200 },
+        "2025-03": { "budget": 6200, "actual": 6200 },
+        "2025-04": { "budget": 6200, "actual": 6450 },
+        "2025-05": { "budget": 6200, "actual": 6450 },
+        "2025-06": { "budget": 6200, "actual": 6450 },
+        "2025-07": { "budget": 7100, "actual": 7100 },
+        "2025-08": { "budget": 7100, "actual": 7100 },
+        "2025-09": { "budget": 7100, "actual": 7100 },
+        "2025-10": { "budget": 7100, "actual": 7100 },
+        "2025-11": { "budget": 7100, "actual": 7350 },
+        "2025-12": { "budget": 7100, "actual": 7350 }
+      }
+    },
+    {
+      "id": "travel",
+      "name": "Travel",
+      "cells": {
+        "2025-01": { "budget": 0, "actual": 0 },
+        "2025-02": { "budget": 0, "actual": 185 },
+        "2025-03": { "budget": 2500, "actual": 2410 },
+        "2025-04": { "budget": 2500, "actual": 3200 },
+        "2025-05": { "budget": 4000, "actual": 3890 },
+        "2025-06": { "budget": 4000, "actual": 5100 },
+        "2025-07": { "budget": 8000, "actual": 9200 },
+        "2025-08": { "budget": 3500, "actual": 2800 },
+        "2025-09": { "budget": 6000, "actual": 6100 },
+        "2025-10": { "budget": 4500, "actual": 4700 },
+        "2025-11": { "budget": 2000, "actual": 1500 },
+        "2025-12": { "budget": 1500, "actual": 900 }
+      }
+    },
+    {
+      "id": "professional-services",
+      "name": "Professional Services",
+      "cells": {
+        "2025-01": { "budget": 7500, "actual": 7200 },
+        "2025-02": { "budget": 7500, "actual": 8100 },
+        "2025-03": { "budget": 7500, "actual": 7500 },
+        "2025-04": { "budget": 7500, "actual": 6000 },
+        "2025-05": { "budget": 7500, "actual": 9200 },
+        "2025-06": { "budget": 7500, "actual": 7400 },
+        "2025-07": { "budget": 7500, "actual": 8800 },
+        "2025-08": { "budget": 7500, "actual": 7500 },
+        "2025-09": { "budget": 7500, "actual": 7100 },
+        "2025-10": { "budget": 7500, "actual": 12000 },
+        "2025-11": { "budget": 7500, "actual": 6800 },
+        "2025-12": { "budget": 7500, "actual": null }
+      }
+    }
+  ]
+}
